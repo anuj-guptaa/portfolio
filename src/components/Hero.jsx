@@ -2,44 +2,77 @@ import { ArrowRight } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-slate-900 to-slate-950 px-4">
-      <div className="max-w-4xl mx-auto text-center">
-        <div className="mb-6 inline-block">
-          <span className="px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium">
-            Welcome to my portfolio
-          </span>
-        </div>
+    <section id="home" className="min-h-[80vh] flex items-center justify-center bg-white px-4 py-20">
+      <div className="max-w-6xl mx-auto w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <div>
+            <div className="mb-6 inline-block">
+              <span className="px-4 py-2 rounded-full bg-black text-white text-sm font-medium">
+                Welcome to my portfolio
+              </span>
+            </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Hello, I'm a{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
-            DevOps & Cloud Engineer
-          </span>
-        </h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-black">
+              Hello, I'm a{' '}
+              <span className="text-black font-black">
+                DevOps, Cloud, and AI Engineer
+              </span>
+            </h1>
 
-        <p className="text-xl text-slate-400 mb-8 max-w-2xl mx-auto">
-          I design, build, and manage scalable cloud infrastructure. Automating deployments, optimizing systems, and enabling teams to ship faster.
-        </p>
+            <p className="text-lg text-gray-600 mb-8">
+              I design, build, and manage scalable cloud infrastructure. Automating deployments, optimizing systems, and enabling teams to ship faster.
+            </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#projects"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition font-medium"
-          >
-            View My Work
-            <ArrowRight size={20} />
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center px-8 py-3 border border-slate-700 rounded-lg hover:bg-slate-800 transition font-medium"
-          >
-            Get in Touch
-          </a>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#projects"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-black text-white rounded-lg hover:bg-gray-900 transition font-medium"
+              >
+                View My Work
+                <ArrowRight size={20} />
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center px-8 py-3 border border-black rounded-lg hover:bg-black hover:text-white transition font-medium"
+              >
+                Get in Touch
+              </a>
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-sm">
+              {/* Placeholder for profile image */}
+              <div className="w-full aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg border-2  flex items-center justify-center overflow-hidden shadow-lg">
+                <img
+                  src="/profile.jpg"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none'
+                    e.target.nextElementSibling.style.display = 'flex'
+                  }}
+                />
+                <div
+                  id="placeholder"
+                  className="absolute inset-0 hidden bg-gradient-to-br from-gray-100 to-gray-200 items-center justify-center text-gray-500"
+                >
+                  <div className="text-center">
+                    <div className="text-4xl mb-2">🚀</div>
+                    <p className="text-sm font-medium">Add your profile image</p>
+                    <p className="text-xs text-gray-400">(Place image at public/profile.jpg)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Scroll indicator */}
-        <div className="mt-16 animate-pulse">
-          <div className="text-slate-400 text-sm">Scroll to explore</div>
+        <div className="mt-16 flex justify-center">
+          <div className="text-gray-500 text-sm animate-pulse">Scroll to explore</div>
         </div>
       </div>
     </section>

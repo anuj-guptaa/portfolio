@@ -30,21 +30,20 @@ export default function Contact() {
   }
 
   const socialLinks = [
-    { icon: Linkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Github, url: 'https://github.com', label: 'GitHub' },
-    { icon: Twitter, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: Mail, url: 'mailto:your.email@example.com', label: 'Email' },
+    { icon: Linkedin, url: 'https://www.linkedin.com/in/anujgupta299/', label: 'LinkedIn' },
+    { icon: Github, url: 'https://github.com/anuj-guptaa', label: 'GitHub' },
+    { icon: Mail, url: 'mailto:anujg.gupta2000@gmail.com', label: 'Email' },
   ]
 
   return (
-    <section id="contact" className="py-20 px-4 bg-slate-950">
+    <section id="contact" className="py-20 px-4 bg-white">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <span className="text-blue-400 font-medium text-sm">Get in Touch</span>
-          <h2 className="text-5xl font-bold mt-2 mb-4">Let's Scale Infrastructure Together</h2>
-          <p className="text-slate-400 text-lg">
-            I'm always interested in discussing cloud architecture, DevOps challenges, and infrastructure opportunities.
+          <span className="text-black font-medium text-sm">Get in Touch</span>
+          <h2 className="text-5xl font-bold mt-2 mb-4 text-black">Let's Scale Infrastructure Together</h2>
+          <p className="text-gray-600 text-lg">
+            I'm always interested in discussing cloud architecture, DevOps challenges, and AI.
           </p>
         </div>
 
@@ -53,7 +52,7 @@ export default function Contact() {
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                <label htmlFor="name" className="block text-sm font-medium mb-2 text-black">
                   Name
                 </label>
                 <input
@@ -63,13 +62,13 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 bg-slate-900 border border-slate-800 rounded-lg focus:border-blue-500 focus:outline-none transition text-white"
+                  className="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg focus:border-black focus:outline-none transition text-black"
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label htmlFor="email" className="block text-sm font-medium mb-2 text-black">
                   Email
                 </label>
                 <input
@@ -79,13 +78,13 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 bg-slate-900 border border-slate-800 rounded-lg focus:border-blue-500 focus:outline-none transition text-white"
+                  className="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg focus:border-black focus:outline-none transition text-black"
                   placeholder="your.email@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label htmlFor="message" className="block text-sm font-medium mb-2 text-black">
                   Message
                 </label>
                 <textarea
@@ -95,14 +94,14 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows="5"
-                  className="w-full px-4 py-2 bg-slate-900 border border-slate-800 rounded-lg focus:border-blue-500 focus:outline-none transition text-white resize-none"
+                  className="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg focus:border-black focus:outline-none transition text-black resize-none"
                   placeholder="Your message..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition"
+                className="w-full px-6 py-3 bg-black text-white hover:bg-gray-900 rounded-lg font-medium transition"
               >
                 {submitted ? 'Message Sent! ✓' : 'Send Message'}
               </button>
@@ -111,30 +110,30 @@ export default function Contact() {
 
           {/* Contact Info & Social */}
           <div className="space-y-8">
-            <div className="p-6 rounded-lg border border-slate-800 bg-slate-900/50">
-              <h3 className="text-lg font-bold mb-3">Contact Information</h3>
-              <div className="space-y-4 text-slate-400">
+            <div className="p-6 rounded-lg border border-gray-200 bg-white">
+              <h3 className="text-lg font-bold mb-3 text-black">Contact Information</h3>
+              <div className="space-y-4 text-gray-600">
                 <p>
-                  <span className="font-medium text-white">Email:</span>
+                  <span className="font-medium text-black">Email:</span>
                   <br />
-                  your.email@example.com
+                  anujg.gupta2000@gmail.com
                 </p>
                 <p>
-                  <span className="font-medium text-white">Location:</span>
+                  <span className="font-medium text-black">Location:</span>
                   <br />
-                  San Francisco, CA
+                  Bangkok, TH
                 </p>
                 <p>
-                  <span className="font-medium text-white">Availability:</span>
+                  <span className="font-medium text-black">Availability:</span>
                   <br />
-                  Available for DevOps consulting & infrastructure projects
+                  Available for DevOps consulting & infrastructure + AI projects
                 </p>
               </div>
             </div>
 
             {/* Social Links */}
             <div>
-              <h3 className="text-lg font-bold mb-4">Connect with me</h3>
+              <h3 className="text-lg font-bold mb-4 text-black">Connect with me</h3>
               <div className="grid grid-cols-2 gap-4">
                 {socialLinks.map((link, idx) => {
                   const Icon = link.icon
@@ -144,10 +143,10 @@ export default function Contact() {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 p-4 rounded-lg border border-slate-800 hover:border-blue-500/50 hover:bg-slate-900 transition group"
+                      className="flex items-center gap-3 p-4 rounded-lg border border-gray-200 hover:border-black hover:bg-gray-50 transition group"
                     >
-                      <Icon className="w-5 h-5 text-slate-400 group-hover:text-blue-400 transition" />
-                      <span className="group-hover:text-blue-400 transition">{link.label}</span>
+                      <Icon className="w-5 h-5 text-gray-600 group-hover:text-black transition" />
+                      <span className="text-gray-700 group-hover:text-black transition">{link.label}</span>
                     </a>
                   )
                 })}

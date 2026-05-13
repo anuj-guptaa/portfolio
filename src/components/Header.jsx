@@ -7,33 +7,33 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold text-blue-400">
-              DevOps Dev
+            <a href="#home" className="text-2xl font-bold text-black">
+              Anuj Gupta
             </a>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#home" className="hover:text-blue-400 transition">
+            <a href="#home" className="text-gray-700 hover:text-black transition font-medium">
               Home
             </a>
-            <a href="#projects" className="hover:text-blue-400 transition">
+            <a href="#projects" className="text-gray-700 hover:text-black transition font-medium">
               Projects
             </a>
-            <a href="#skills" className="hover:text-blue-400 transition">
+            <a href="#skills" className="text-gray-700 hover:text-black transition font-medium">
               Skills
             </a>
-            <a href="#contact" className="hover:text-blue-400 transition">
+            <a href="#contact" className="text-gray-700 hover:text-black transition font-medium">
               Contact
             </a>
             <a
               href="#contact"
-              className="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+              className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-900 transition font-medium"
             >
               Get in Touch
             </a>
@@ -42,7 +42,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 rounded-lg hover:bg-slate-800 transition"
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -53,35 +53,35 @@ export default function Header() {
           <div className="md:hidden pb-4 space-y-4">
             <a
               href="#home"
-              className="block hover:text-blue-400 transition"
+              className="block text-gray-700 hover:text-black transition font-medium"
               onClick={() => setIsOpen(false)}
             >
               Home
             </a>
             <a
               href="#projects"
-              className="block hover:text-blue-400 transition"
+              className="block text-gray-700 hover:text-black transition font-medium"
               onClick={() => setIsOpen(false)}
             >
               Projects
             </a>
             <a
               href="#skills"
-              className="block hover:text-blue-400 transition"
+              className="block text-gray-700 hover:text-black transition font-medium"
               onClick={() => setIsOpen(false)}
             >
               Skills
             </a>
             <a
               href="#contact"
-              className="block hover:text-blue-400 transition"
+              className="block text-gray-700 hover:text-black transition font-medium"
               onClick={() => setIsOpen(false)}
             >
               Contact
             </a>
             <a
               href="#contact"
-              className="block px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition text-center"
+              className="block px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-900 transition text-center font-medium"
               onClick={() => setIsOpen(false)}
             >
               Get in Touch

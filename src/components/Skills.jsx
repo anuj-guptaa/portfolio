@@ -127,13 +127,13 @@ export default function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-20 px-4 bg-gradient-to-b from-slate-950 to-slate-900">
+    <section id="skills" className="py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <span className="text-blue-400 font-medium text-sm">Core Competencies</span>
-          <h2 className="text-5xl font-bold mt-2 mb-4">DevOps & Cloud Stack</h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <span className="text-black font-medium text-sm">Core Competencies</span>
+          <h2 className="text-5xl font-bold mt-2 mb-4 text-black">DevOps & Cloud Stack</h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Comprehensive expertise in cloud platforms, containerization, infrastructure automation, and deployment pipelines.
           </p>
         </div>
@@ -143,18 +143,18 @@ export default function Skills() {
           {skillCategories.map((skillGroup, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-lg border border-slate-800 bg-slate-900/50 hover:border-blue-500/50 hover:bg-slate-900 transition group"
+              className="p-6 rounded-lg border border-gray-200 bg-white hover:border-black hover:shadow-lg transition group"
             >
-              <h3 className="text-lg font-bold mb-4 text-blue-400 group-hover:text-blue-300 transition">
+              <h3 className="text-lg font-bold mb-4 text-black group-hover:text-gray-700 transition">
                 {skillGroup.category}
               </h3>
               <ul className="space-y-3">
                 {skillGroup.items.map((skill, j) => {
                   const ToolIcon = toolIcons[skill] || Zap
                   return (
-                    <li key={j} className="flex items-center gap-2 text-slate-300 text-sm group/item">
-                      <ToolIcon className="w-4 h-4 flex-shrink-0 text-slate-400 group-hover/item:text-slate-200 transition" />
-                      <span className="group-hover/item:text-white transition">{skill}</span>
+                    <li key={j} className="flex items-center gap-2 text-gray-700 text-sm group/item">
+                      <ToolIcon className="w-4 h-4 flex-shrink-0 text-gray-500 group-hover/item:text-black transition" />
+                      <span className="group-hover/item:text-black transition">{skill}</span>
                     </li>
                   )
                 })}
