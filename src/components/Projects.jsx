@@ -63,12 +63,12 @@ export default function Projects() {
       id: 5,
       category: 'Backend & Databases',
       title: 'Project Wisdom',
-      description: 'Built scalable database architecture with PostgreSQL, caching with Redis, and query optimization for millions of requests.',
+      description: 'Interactive AI avatars that allow interaction with realistic tone and accents, multi-lingual voice synthesis, and engaging conversations with real-world leaders.',
       media: {
         type: 'image',
         src: '/projects/wisdom.png'
       },
-      tags: ['PostgreSQL', 'Redis', 'Query Optimization', 'Replication'],
+      tags: ['Text-to-Speech', 'ML/AI', 'Training', 'RAG', 'Redis'],
       // github: 'https://github.com',
       live: 'https://aibrainlab.com/wisdom/',
     },
