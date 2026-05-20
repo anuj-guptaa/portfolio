@@ -6,7 +6,7 @@ const ExperienceAndEducation = () => {
       id: 1,
       role: "Technical Lead",
       company: "AI Brain Lab",
-      logo: "/ai-brain-lab.png",
+      logo: "projects/ai-brain-lab.png",
       duration: "Sep 2023 - May 2026",
       description: "Responsible for building scalable backends, complete with databases, data-warehousing, LLM flow development + deployment as well as production-ready integration and CI/CD procedures of applications."
     }
@@ -17,14 +17,14 @@ const ExperienceAndEducation = () => {
       id: 1,
       degree: "Master of Engineering in Data Science and Artificial Intelligence",
       institution: "Asian Institute of Technology, Thailand",
-      logo: "/ait-logo.jpg",
+      logo: "projects/ait-logo.jpg",
       year: "2021 - 2024"
     },
     {
       id: 2,
       degree: "(Hons.) Bachelor of Engineering in Chemical Engineering",
       institution: "University of Nottingham, UK",
-      logo: "/nottingham-logo.png",
+      logo: "projects/nottingham-logo.png",
       year: "2018 - 2021"
     }
   ];

@@ -33,7 +33,7 @@ export default function Header() {
               Contact
             </a>
                         <a
-              href="/resume.pdf"
+              href="projects/resume.pdf"
               download="Anuj_Gupta_Resume.pdf"
               className="flex items-center gap-1 text-gray-700 hover:text-black transition font-medium"
             >
@@ -82,7 +82,7 @@ export default function Header() {
               Skills
             </a>
             <a
-              href="/resume.pdf"
+              href="projects/resume.pdf"
               download="Anuj_Gupta_Resume.pdf"
               className="flex items-center gap-2 text-gray-700 hover:text-black transition font-medium"
               onClick={() => setIsOpen(false)}

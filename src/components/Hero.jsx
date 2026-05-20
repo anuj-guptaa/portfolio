@@ -33,7 +33,7 @@ export default function Hero() {
                 <ArrowRight size={20} />
               </a>
               <a
-                href="/resume.pdf"
+                href="projects/resume.pdf"
                 download="Anuj_Gupta_Resume.pdf"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 border border-black rounded-lg hover:bg-gray-50 transition font-medium"
               >
