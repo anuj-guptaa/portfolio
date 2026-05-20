@@ -3,19 +3,19 @@ import ImageCarousel from './ImageCarousel'
 export default function Gallery() {
   const galleryImages = [
     {
-      src: '/gallery/project-1.jpg',
+      src: 'gallery/project-1.jpg',
       alt: 'DevOps Architecture Project',
     },
     {
-      src: '/gallery/project-2.jpg',
+      src: 'gallery/project-2.jpg',
       alt: 'Kubernetes Deployment',
     },
     {
-      src: '/gallery/project-3.jpg',
+      src: 'gallery/project-3.jpg',
       alt: 'CI/CD Pipeline',
     },
     {
-      src: '/gallery/project-4.jpg',
+      src: 'gallery/project-4.jpg',
       alt: 'Cloud Infrastructure',
     },
   ]

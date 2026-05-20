@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Download } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -21,10 +21,10 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg text-gray-600 mb-8">
-              I design, build, and manage scalable cloud infrastructure. Automating deployments, optimizing systems, and enabling teams to ship faster.
+              I design, build, and manage scalable cloud applications & infrastructure. Developing & automating deployments, optimizing systems, and enabling teams to ship faster.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4">
               <a
                 href="#projects"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-black text-white rounded-lg hover:bg-gray-900 transition font-medium"
@@ -33,8 +33,16 @@ export default function Hero() {
                 <ArrowRight size={20} />
               </a>
               <a
+                href="/resume.pdf"
+                download="Anuj_Gupta_Resume.pdf"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3 border border-black rounded-lg hover:bg-gray-50 transition font-medium"
+              >
+                <Download size={20} />
+                Download Resume
+              </a>
+              <a
                 href="#contact"
-                className="inline-flex items-center justify-center px-8 py-3 border border-black rounded-lg hover:bg-black hover:text-white transition font-medium"
+                className="inline-flex items-center justify-center px-8 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition font-medium"
               >
                 Get in Touch
               </a>
@@ -47,7 +55,7 @@ export default function Hero() {
               {/* Placeholder for profile image */}
               <div className="w-full aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg border-2  flex items-center justify-center overflow-hidden shadow-lg">
                 <img
-                  src="/profile.jpg"
+                  src="profile.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                   onError={(e) => {

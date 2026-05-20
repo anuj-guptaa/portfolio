@@ -68,7 +68,7 @@ export default function ProjectCard({ project }) {
               className="inline-flex items-center gap-2 text-gray-700 hover:text-black transition text-sm font-medium\"
             >
               <Github size={16} />
-              Code
+              {/* Code */}
             </a>
           )}
           {project.live && (

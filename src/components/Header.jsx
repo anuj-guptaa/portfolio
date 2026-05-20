@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Download } from 'lucide-react'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,8 +28,17 @@ export default function Header() {
             <a href="#skills" className="text-gray-700 hover:text-black transition font-medium">
               Skills
             </a>
+
             <a href="#contact" className="text-gray-700 hover:text-black transition font-medium">
               Contact
+            </a>
+                        <a
+              href="/resume.pdf"
+              download="Anuj_Gupta_Resume.pdf"
+              className="flex items-center gap-1 text-gray-700 hover:text-black transition font-medium"
+            >
+              <Download size={18} />
+              Resume
             </a>
             <a
               href="#contact"
@@ -71,6 +80,15 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
             >
               Skills
+            </a>
+            <a
+              href="/resume.pdf"
+              download="Anuj_Gupta_Resume.pdf"
+              className="flex items-center gap-2 text-gray-700 hover:text-black transition font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              <Download size={18} />
+              Resume
             </a>
             <a
               href="#contact"

@@ -6,6 +6,8 @@ import Gallery from './components/Gallery'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ExperienceAndEducation from './components/ExperienceAndEducation';
+import CertificationsAndLanguages from './components/CertificationsAndLanguages';
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
       <main>
         <Hero />
         <Projects />
-        <Gallery />
+        {/* <Gallery /> */}
         <Skills />
+        <ExperienceAndEducation />
+        <CertificationsAndLanguages />
         <Contact />
       </main>
       <Footer />

@@ -24,6 +24,12 @@ const toolIcons = {
   'Helm': Container,
   'GCP Compute': Cloud,
   'DigitalOcean': Cloud,
+  'Vercel': Cloud,
+
+  // Version Control & Collaboration
+  'GitHub Actions': GitBranch,
+  'Azure DevOps': GitBranch,
+  'GCP Cloud Build': GitBranch,
 
   // Data & ML
   'Apache Kafka': Workflow,
@@ -42,6 +48,10 @@ const toolIcons = {
   'tailwind CSS': Layout,
   'TypeScript': Code2,
   'Vue.js': Code2,
+  'Next.js': Code2,
+  'Django': Code2,
+  'Nuxt.js': Code2,
+  'Ruby on Rails': Code2,
 
   // AI/ML
   'LLM Deployment': Cloud,
@@ -61,36 +71,37 @@ export default function Skills() {
     {
       category: 'Cloud & Infrastructure',
       items: [
-        'AWS (EC2, ECS, RDS, S3)',
         'Kubernetes',
         'Docker',
+        'AWS (EC2, ECS, RDS, S3)',
         'Azure VMs & AKS',
         'GCP Compute',
-        'DigitalOcean'
+        'Vercel'
       ]
     },
     {
       category: 'DevOps & CI/CD',
       items: [
+        'GitHub Actions',
+        'GCP Cloud Build',
+        'Azure DevOps',
         'Terraform',
         'CI/CD Pipelines',
         'Monitoring & Observability',
         'Infrastructure Automation',
-        'CloudFormation',
-        'Helm'
+        'CloudFormation'
       ]
     },
     {
       category: 'Backend & Databases',
       items: [
         'Node.js',
-        'Python',
+        'Python Django, FastAPI, Flask',
         'Database Design',
         'API Architecture',
         'Express',
         'FastAPI',
-        'gRPC',
-        'GraphQL'
+        'gRPC'
       ]
     },
     {
@@ -109,15 +120,19 @@ export default function Skills() {
     {
       category: 'Frontend & Full-Stack',
       items: [
+        'Django',
         'React',
-        'tailwind CSS',
-        'TypeScript',
-        'Vue.js'
+        'Nuxt.js',
+        'Vue.js',
+        'JavaScript, TypeScript',
+        'Ruby on Rails',
+
       ]
     },
     {
       category: 'Tools & Automation',
       items: [
+        'Make, n8n',
         'Ansible',
         'Jenkins',
         'Database Optimization',
@@ -131,8 +146,8 @@ export default function Skills() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <span className="text-black font-medium text-sm">Core Competencies</span>
-          <h2 className="text-5xl font-bold mt-2 mb-4 text-black">DevOps & Cloud Stack</h2>
+          {/* <span className="text-black font-medium text-sm">Core Competencies</span> */}
+          <h2 className="text-5xl font-bold mt-2 mb-4 text-black">Core Competencies</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Comprehensive expertise in cloud platforms, containerization, infrastructure automation, and deployment pipelines.
           </p>

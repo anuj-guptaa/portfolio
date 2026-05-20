@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Twitter } from 'lucide-react'
+import { Mail, Linkedin, Github } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Contact() {
@@ -8,10 +8,9 @@ export default function Contact() {
     message: '',
   })
 
-  const [submitted, setSubmitted] = useState(false)
-
   const handleChange = (e) => {
     const { name, value } = e.target
+
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -20,19 +19,34 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Here you would typically send the form data to a server
-    console.log('Form submitted:', formData)
-    setSubmitted(true)
-    setTimeout(() => {
-      setFormData({ name: '', email: '', message: '' })
-      setSubmitted(false)
-    }, 3000)
+
+    const subject = encodeURIComponent(
+      `Portfolio Contact from ${formData.name}`
+    )
+
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )
+
+    window.location.href = `mailto:anujg.gupta2000@gmail.com?subject=${subject}&body=${body}`
   }
 
   const socialLinks = [
-    { icon: Linkedin, url: 'https://www.linkedin.com/in/anujgupta299/', label: 'LinkedIn' },
-    { icon: Github, url: 'https://github.com/anuj-guptaa', label: 'GitHub' },
-    { icon: Mail, url: 'mailto:anujg.gupta2000@gmail.com', label: 'Email' },
+    {
+      icon: Linkedin,
+      url: 'https://www.linkedin.com/in/anujgupta299/',
+      label: 'LinkedIn',
+    },
+    {
+      icon: Github,
+      url: 'https://github.com/anuj-guptaa',
+      label: 'GitHub',
+    },
+    {
+      icon: Mail,
+      url: 'mailto:anujg.gupta2000@gmail.com',
+      label: 'Email',
+    },
   ]
 
   return (
@@ -40,10 +54,17 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <span className="text-black font-medium text-sm">Get in Touch</span>
-          <h2 className="text-5xl font-bold mt-2 mb-4 text-black">Let's Scale Infrastructure Together</h2>
+          <span className="text-black font-medium text-sm">
+            Get in Touch
+          </span>
+
+          <h2 className="text-5xl font-bold mt-2 mb-4 text-black">
+            Let's Work Together
+          </h2>
+
           <p className="text-gray-600 text-lg">
-            I'm always interested in discussing cloud architecture, DevOps challenges, and AI.
+            I'm always interested in opportunities related to cloud architecture,
+            DevOps challenges, and AI.
           </p>
         </div>
 
@@ -52,9 +73,13 @@ export default function Contact() {
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2 text-black">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2 text-black"
+                >
                   Name
                 </label>
+
                 <input
                   type="text"
                   id="name"
@@ -68,9 +93,13 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2 text-black">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2 text-black"
+                >
                   Email
                 </label>
+
                 <input
                   type="email"
                   id="email"
@@ -84,9 +113,13 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2 text-black">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2 text-black"
+                >
                   Message
                 </label>
+
                 <textarea
                   id="message"
                   name="message"
@@ -103,7 +136,7 @@ export default function Contact() {
                 type="submit"
                 className="w-full px-6 py-3 bg-black text-white hover:bg-gray-900 rounded-lg font-medium transition"
               >
-                {submitted ? 'Message Sent! ✓' : 'Send Message'}
+                Send Message
               </button>
             </form>
           </div>
@@ -111,32 +144,48 @@ export default function Contact() {
           {/* Contact Info & Social */}
           <div className="space-y-8">
             <div className="p-6 rounded-lg border border-gray-200 bg-white">
-              <h3 className="text-lg font-bold mb-3 text-black">Contact Information</h3>
+              <h3 className="text-lg font-bold mb-3 text-black">
+                Contact Information
+              </h3>
+
               <div className="space-y-4 text-gray-600">
                 <p>
-                  <span className="font-medium text-black">Email:</span>
+                  <span className="font-medium text-black">
+                    Email:
+                  </span>
                   <br />
                   anujg.gupta2000@gmail.com
                 </p>
+
                 <p>
-                  <span className="font-medium text-black">Location:</span>
+                  <span className="font-medium text-black">
+                    Location:
+                  </span>
                   <br />
                   Bangkok, TH
                 </p>
+
                 <p>
-                  <span className="font-medium text-black">Availability:</span>
+                  <span className="font-medium text-black">
+                    Availability:
+                  </span>
                   <br />
-                  Available for DevOps consulting & infrastructure + AI projects
+                  Available for DevOps consulting & infrastructure +
+                  AI projects
                 </p>
               </div>
             </div>
 
             {/* Social Links */}
             <div>
-              <h3 className="text-lg font-bold mb-4 text-black">Connect with me</h3>
+              <h3 className="text-lg font-bold mb-4 text-black">
+                Connect with me
+              </h3>
+
               <div className="grid grid-cols-2 gap-4">
                 {socialLinks.map((link, idx) => {
                   const Icon = link.icon
+
                   return (
                     <a
                       key={idx}
@@ -146,7 +195,10 @@ export default function Contact() {
                       className="flex items-center gap-3 p-4 rounded-lg border border-gray-200 hover:border-black hover:bg-gray-50 transition group"
                     >
                       <Icon className="w-5 h-5 text-gray-600 group-hover:text-black transition" />
-                      <span className="text-gray-700 group-hover:text-black transition">{link.label}</span>
+
+                      <span className="text-gray-700 group-hover:text-black transition">
+                        {link.label}
+                      </span>
                     </a>
                   )
                 })}
