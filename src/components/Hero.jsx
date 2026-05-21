@@ -55,7 +55,7 @@ export default function Hero() {
               {/* Placeholder for profile image */}
               <div className="w-full aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg border-2  flex items-center justify-center overflow-hidden shadow-lg">
                 <img
-                  src="profile.jpg"
+                  src="projects/profile.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -68,9 +68,9 @@ export default function Hero() {
                   className="absolute inset-0 hidden bg-gradient-to-br from-gray-100 to-gray-200 items-center justify-center text-gray-500"
                 >
                   <div className="text-center">
-                    <div className="text-4xl mb-2">🚀</div>
-                    <p className="text-sm font-medium">Add your profile image</p>
-                    <p className="text-xs text-gray-400">(Place image at public/profile.jpg)</p>
+                    <div className="text-4xl mb-2"></div>
+                    {/* <p className="text-sm font-medium">Add your profile image</p> */}
+                    <p className="text-xs text-gray-400">(public/profile.jpg)</p>
                   </div>
                 </div>
               </div>
@@ -79,9 +79,9 @@ export default function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="mt-16 flex justify-center">
+        {/* <div className="mt-16 flex justify-center">
           <div className="text-gray-500 text-sm animate-pulse">Scroll to explore</div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

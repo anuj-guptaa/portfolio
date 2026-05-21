@@ -7,8 +7,16 @@ const ExperienceAndEducation = () => {
       role: "Technical Lead",
       company: "AI Brain Lab",
       logo: "projects/ai-brain-lab.png",
-      duration: "Sep 2023 - May 2026",
+      duration: "April 2024 - May 2026",
       description: "Responsible for building scalable backends, complete with databases, data-warehousing, LLM flow development + deployment as well as production-ready integration and CI/CD procedures of applications."
+    },
+        {
+      id: 2,
+      role: "AI Engineer Intern",
+      company: "AI Brain Lab",
+      logo: "projects/ai-brain-lab.png",
+      duration: "Sep 2023 - April 2024",
+      description: "Develop LLM-integrated applications and contribute to the development of AI-powered solutions."
     }
   ];
 
