@@ -40,12 +40,12 @@ export default function Hero() {
                 <Download size={20} />
                 Download Resume
               </a>
-              <a
+              {/* <a
                 href="#contact"
                 className="inline-flex items-center justify-center px-8 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition font-medium"
               >
                 Get in Touch
-              </a>
+              </a> */}
             </div>
           </div>
 

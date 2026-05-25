@@ -32,14 +32,14 @@ export default function Header() {
             <a href="#contact" className="text-gray-700 hover:text-black transition font-medium">
               Contact
             </a>
-                        <a
+                        {/* <a
               href="projects/resume.pdf"
               download="Anuj_Gupta_Resume.pdf"
               className="flex items-center gap-1 text-gray-700 hover:text-black transition font-medium"
             >
               <Download size={18} />
               Resume
-            </a>
+            </a> */}
             <a
               href="#contact"
               className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-900 transition font-medium"
@@ -81,7 +81,7 @@ export default function Header() {
             >
               Skills
             </a>
-            <a
+            {/* <a
               href="projects/resume.pdf"
               download="Anuj_Gupta_Resume.pdf"
               className="flex items-center gap-2 text-gray-700 hover:text-black transition font-medium"
@@ -89,7 +89,7 @@ export default function Header() {
             >
               <Download size={18} />
               Resume
-            </a>
+            </a> */}
             <a
               href="#contact"
               className="block text-gray-700 hover:text-black transition font-medium"
