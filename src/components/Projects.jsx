@@ -140,7 +140,7 @@ export default function Projects() {
           <span className="text-black font-medium text-sm">Featured Work</span>
           <h2 className="text-5xl font-bold mt-2 mb-4 text-black">Work & Personal Projects</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            A selection products and projects I've architected and deployed.
+            A selection of products and projects I've architected and deployed.
           </p>
         </div>
 
