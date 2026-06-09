@@ -7,16 +7,16 @@ const ExperienceAndEducation = () => {
       role: "Cloud & MLOps Engineer",
       company: "AI Brain Lab",
       logo: "projects/ai-brain-lab.png",
-      duration: "April 2024 - May 2026",
-      description: "Responsible for building scalable backends, complete with databases, data-warehousing, LLM flow development + deployment as well as production-ready integration and CI/CD procedures of applications."
+      duration: "May 2024 - May 2026",
+      description: "Responsible for designing, deploying, and operating systems on Azure and GCP. Led development of enterprise AI products, managed production cloud infrastructure, implemented CI/CD automation, and delivered ML-powered systems for insurance, HR, and sustainability clients across Asia."
     },
         {
       id: 2,
       role: "AI Engineer Intern",
       company: "AI Brain Lab",
       logo: "projects/ai-brain-lab.png",
-      duration: "Sep 2023 - April 2024",
-      description: "Develop LLM-integrated applications and contribute to the development of AI-powered solutions."
+      duration: "Oct 2023 - May 2024",
+      description: "Contribute and ideate to the early-stage architectural development of several founding products including ESG Studio and an Insurance CRM for automotive insurance companies in Thailand. Worked with other founders to pitch the startup and secure pre-seed investment for founding the company."
     }
   ];
 
