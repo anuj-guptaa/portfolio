@@ -16,7 +16,7 @@ export default function Hero() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-black">
               Hello, I'm a{' '}
               <span className="text-black font-black">
-                DevOps, Backend, and AI Engineer
+                DevOps, Full-Stack, and AI Engineer
               </span>
             </h1>
 

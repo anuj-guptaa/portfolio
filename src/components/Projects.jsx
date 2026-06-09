@@ -28,7 +28,7 @@ export default function Projects() {
         type: 'image',
         src: 'projects/github-actions.png'
       },
-      tags: ['GitHub Actions', 'GCP Cloud Build', 'Azure DevOps', 'Docker'],
+      tags: ['GitHub Actions', 'GCP Cloud Build', 'Azure DevOps', 'Docker', 'FastAPI'],
       // github: 'https://github.com',
       // live: 'https://example.com',
     },
@@ -41,7 +41,7 @@ export default function Projects() {
         type: 'image',
         src: 'projects/api-library.png'
       },
-      tags: ['ML/AI', 'Speech-to-Text', 'OCR', 'Python'],
+      tags: ['ML/AI', 'Speech-to-Text', 'OCR', 'Django', 'FastAPI'],
       // github: 'https://github.com',
       live: 'https://aibrainlab.com/api-library/',
     },
@@ -68,7 +68,7 @@ export default function Projects() {
         type: 'image',
         src: 'projects/wisdom.png'
       },
-      tags: ['Text-to-Speech', 'ML/AI', 'Training', 'RAG', 'Redis'],
+      tags: ['Text-to-Speech', 'ML/AI', 'Training', 'RAG', 'Redis', 'Django'],
       // github: 'https://github.com',
       live: 'https://aibrainlab.com/wisdom/',
     },

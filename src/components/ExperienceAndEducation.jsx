@@ -4,7 +4,7 @@ const ExperienceAndEducation = () => {
   const experiences = [
     {
       id: 1,
-      role: "Technical Lead",
+      role: "Cloud & MLOps Engineer",
       company: "AI Brain Lab",
       logo: "projects/ai-brain-lab.png",
       duration: "April 2024 - May 2026",
