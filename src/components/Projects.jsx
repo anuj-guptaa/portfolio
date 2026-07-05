@@ -47,6 +47,19 @@ export default function Projects() {
       // live: 'https://example.com',
     },
     {
+      id: 4,
+      category: 'DevOps & Cloud',
+      title: 'Full CI/CD Pipelines from Scratch (GitHub | Azure | GCP)',
+      description: 'Built complete GitOps pipeline with automated testing, deployment, and rollback capabilities across staging and production with containerized deployment to VMs and Serverless instances.',
+      media: {
+        type: 'image',
+        src: 'projects/github-actions.png'
+      },
+      tags: ['GitHub Actions', 'GCP Cloud Build', 'Azure DevOps', 'Docker', 'FastAPI'],
+      // github: 'https://github.com',
+      // live: 'https://example.com',
+    },
+    {
       id: 5,
       category: 'AI & ML Deployment',
       title: 'API Library',
