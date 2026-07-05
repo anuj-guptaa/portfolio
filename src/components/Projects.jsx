@@ -34,20 +34,6 @@ export default function Projects() {
       // video: 'https://youtu.be/zxQdJOtG46Y',
     },
     {
-      id: 2,
-      category: 'Full Stack',
-      title: 'Modular End-to-End RAG Platform with Terraform-supported Cloud Agnostic Architecture',
-      description: 'Cloud-agnostic modular RAG platform with MCP integration, pluggable retrievers/rerankers, FAISS vector search, and Terraform-based deployment on GCP Cloud Run. Developed alongside @MirAliNaqiTalpur',
-      media: {
-        type: 'image',
-        src: 'projects/rag-platform.png'
-      },
-      tags: ['RAG', 'Document Processing', 'Django', 'Terraform', 'GCP', 'Docker', 'FAISS', 'MCP'],
-      github: 'https://github.com/anuj-guptaa/rag-platform-aibl',
-      // live: 'https://aibrainlab.com/edge/',
-      // video: 'https://youtu.be/zxQdJOtG46Y',
-    },
-    {
       id: 3,
       category: 'AI & ML Deployment',
       title: 'Liveness Detection Demo + API (Passive)',
