@@ -36,8 +36,8 @@ export default function Projects() {
     {
       id: 3,
       category: 'AI & ML Deployment',
-      title: 'Liveness Detection Demo + API (Passive)',
-      description: 'Passive Liveness Detection model + demo webpage + FastAPI',
+      title: 'Liveness Detection Live Demo + API (Passive)',
+      description: 'Passive Liveness Detection model + live demo webpage + FastAPI',
       media: {
         type: 'image',
         src: 'projects/liveness.png'
