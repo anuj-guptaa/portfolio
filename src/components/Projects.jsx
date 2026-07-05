@@ -51,13 +51,13 @@ export default function Projects() {
       id: 3,
       category: 'AI & ML Deployment',
       title: 'Liveness Detection Demo + API (Passive)',
-      description: 'Passive Liveness detection model + demo webpage + FastAPI',
+      description: 'Passive Liveness Detection model + demo webpage + FastAPI',
       media: {
         type: 'image',
         src: 'projects/liveness.png'
       },
-      tags: ['Liveness', '', 'Docker', 'FastAPI', 'ML/AI'],
-      github: 'https://github.com',
+      tags: ['Liveness', 'Fraud Detection', 'Docker', 'FastAPI', 'ML/AI'],
+      github: 'https://github.com/anuj-guptaa/liveness-detection',
       // live: 'https://example.com',
     },
     {
