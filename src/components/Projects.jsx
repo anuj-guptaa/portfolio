@@ -34,20 +34,34 @@ export default function Projects() {
       // video: 'https://youtu.be/zxQdJOtG46Y',
     },
     {
-      id: 3,
-      category: 'DevOps & Cloud',
-      title: 'Full CI/CD Pipelines from Scratch (GitHub | Azure | GCP)',
-      description: 'Built complete GitOps pipeline with automated testing, deployment, and rollback capabilities across staging and production with containerized deployment to VMs and Serverless instances.',
+      id: 2,
+      category: 'Full Stack',
+      title: 'Modular End-to-End RAG Platform with Terraform-supported Cloud Agnostic Architecture',
+      description: 'Cloud-agnostic modular RAG platform with MCP integration, pluggable retrievers/rerankers, FAISS vector search, and Terraform-based deployment on GCP Cloud Run. Developed alongside @MirAliNaqiTalpur',
       media: {
         type: 'image',
-        src: 'projects/github-actions.png'
+        src: 'projects/rag-platform.png'
       },
-      tags: ['GitHub Actions', 'GCP Cloud Build', 'Azure DevOps', 'Docker', 'FastAPI'],
-      // github: 'https://github.com',
+      tags: ['RAG', 'Document Processing', 'Django', 'Terraform', 'GCP', 'Docker', 'FAISS', 'MCP'],
+      github: 'https://github.com/anuj-guptaa/rag-platform-aibl',
+      // live: 'https://aibrainlab.com/edge/',
+      // video: 'https://youtu.be/zxQdJOtG46Y',
+    },
+    {
+      id: 3,
+      category: 'AI & ML Deployment',
+      title: 'Liveness Detection Demo + API (Passive)',
+      description: 'Passive Liveness detection model + demo webpage + FastAPI',
+      media: {
+        type: 'image',
+        src: 'projects/liveness.png'
+      },
+      tags: ['Liveness', '', 'Docker', 'FastAPI', 'ML/AI'],
+      github: 'https://github.com',
       // live: 'https://example.com',
     },
     {
-      id: 4,
+      id: 5,
       category: 'AI & ML Deployment',
       title: 'API Library',
       description: 'A collection of ready to use custom APIs encompassing Speech-to-Text and Text-to-Speech functionalities (EN + TH),  OCR (EN + TH), Liveness Detection, Emotion Detection, and more.',
@@ -60,7 +74,7 @@ export default function Projects() {
       live: 'https://aibrainlab.com/api-library/',
     },
     {
-      id: 5,
+      id: 6,
       category: 'Full Stack',
       title: 'ESG Studio',
       description: 'An enterprise application that provides real-time ESG (Environmental, Social, Governance) data, analytics, and insights for PLCs and SMEs in Thailand.',
@@ -74,7 +88,7 @@ export default function Projects() {
       video: 'https://youtu.be/cmEnaNqGYzQ',
     },
     {
-      id: 6,
+      id: 7,
       category: 'Full Stack',
       title: 'Project Wisdom',
       description: 'Interactive AI avatars that allow interaction with realistic tone and accents, multi-lingual voice synthesis, and engaging conversations with real-world leaders.',
@@ -87,7 +101,7 @@ export default function Projects() {
       live: 'https://aibrainlab.com/wisdom/',
     },
     {
-      id: 7,
+      id: 8,
       category: 'Full Stack',
       title: 'Key Account Management System',
       description: 'An AI-first solution for managing and tracking key accounts, including CRM features, document OCR, task and meetings management and more targeted at insurance companies in Thailand.',
@@ -100,7 +114,7 @@ export default function Projects() {
       // live: 'https://example.com',
     },
     {
-      id: 8,
+      id: 9,
       category: 'Full Stack',
       title: 'AudioCity',
       description: '(Personal) An Audiobook e-commerce platform with upload/download functionality, automated transcript + caption generation, and mock payment gateway integration.',
@@ -114,7 +128,7 @@ export default function Projects() {
       video: 'https://www.youtube.com/watch?v=IB1XOFk9TNs',
     },
     {
-      id: 9,
+      id: 10,
       category: 'Full Stack',
       title: 'Anytime-IELTS',
       description: '(Hackathon) an AI-powered English language mastery platform for IELTS exam takers. Achieved second place in the education domain.',
@@ -165,8 +179,8 @@ export default function Projects() {
               key={cat}
               onClick={() => setSelectedCategory(cat)}
               className={`px-5 py-2 rounded-full font-medium transition ${selectedCategory === cat
-                  ? 'bg-black text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                ? 'bg-black text-white'
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
             >
               {cat}
