@@ -42,7 +42,7 @@ export default function Projects() {
         type: 'image',
         src: 'projects/liveness.png'
       },
-      tags: ['Liveness', 'Fraud Detection', 'Docker', 'FastAPI', 'ML/AI'],
+      tags: ['Liveness', 'Fraud Detection', 'Computer Vision', 'Docker', 'FastAPI', 'ML/AI'],
       github: 'https://github.com/anuj-guptaa/liveness-detection',
       // live: 'https://example.com',
     },
