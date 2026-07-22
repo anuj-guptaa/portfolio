@@ -71,12 +71,13 @@ export default function Skills() {
     {
       category: 'Cloud & Infrastructure',
       items: [
-        'Kubernetes',
         'Docker',
+        'Kubernetes',
         'AWS (EC2, ECS, RDS, S3)',
         'Azure VMs & AKS',
         'GCP Compute',
         'Vercel'
+        'Terraform',
       ]
     },
     {
@@ -97,10 +98,9 @@ export default function Skills() {
       items: [
         'Node.js',
         'Python Django, FastAPI, Flask',
-        'Database Design',
+        'Redis',
+        'PostgreSQL', 'MongoDB',
         'API Architecture',
-        'Express',
-        'FastAPI',
         'gRPC'
       ]
     },
@@ -108,13 +108,12 @@ export default function Skills() {
       category: 'Data & AI/ML',
       items: [
         'Apache Kafka',
-        'Redis',
         'ML Model Serving',
         'Data Pipelines',
-        'LLM Deployment',
-        'MLOps',
-        'Vector Databases',
-        'RAG Systems'
+        'LLM Deployment with vLLM, LiteLLM, LangGraph',
+        'MLOps with MLFlow, LangSmith',
+        'Vector Databases - PGVector, Pinecone',
+        'RAG Systems - LangGraph, LangChain'
       ]
     },
     {
@@ -133,7 +132,6 @@ export default function Skills() {
       category: 'Tools & Automation',
       items: [
         'Make, n8n',
-        'Ansible',
         'Jenkins',
         'Database Optimization',
         'Security'

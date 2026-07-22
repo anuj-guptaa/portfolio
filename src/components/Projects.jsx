@@ -36,6 +36,19 @@ export default function Projects() {
     {
       id: 3,
       category: 'AI & ML Deployment',
+      title: 'Offline Tool-calling Agentic AI for SQL, RAG, Forecasting, and Anomaly Detection.',
+      description: 'An offline local agentic AI system capable of performing SQL queries, RAG tasks, forecasting, and anomaly detection without requiring an internet connection. Utilizes Qwen3.5, vLLM, LiteLLM, PGVector, LangGraph, and OpenWeb UI. Fully extensible with more tools, LLMs, and capabilities.',
+      media: {
+        type: 'image',
+        src: 'projects/local-agentic-ai.png'
+      },
+      tags: ['AI Agent','Tool-calling', 'LangGraph', 'vLLM', 'LiteLLM', 'VectorDB', 'Docker', 'FastAPI', 'ML/AI'],
+      github: 'https://github.com/anuj-guptaa/local-agentic-ai',
+      // live: 'https://example.com',
+    },
+    {
+      id: 4,
+      category: 'AI & ML Deployment',
       title: 'Liveness Detection Live Demo + API (Passive)',
       description: 'Passive Liveness Detection model + live demo webpage + FastAPI',
       media: {
@@ -47,7 +60,7 @@ export default function Projects() {
       // live: 'https://example.com',
     },
     {
-      id: 4,
+      id: 5,
       category: 'DevOps & Cloud',
       title: 'Full CI/CD Pipelines from Scratch (GitHub | Azure | GCP)',
       description: 'Built complete GitOps pipeline with automated testing, deployment, and rollback capabilities across staging and production with containerized deployment to VMs and Serverless instances.',
@@ -60,7 +73,7 @@ export default function Projects() {
       // live: 'https://example.com',
     },
     {
-      id: 5,
+      id: 6,
       category: 'AI & ML Deployment',
       title: 'API Library',
       description: 'A collection of ready to use custom APIs encompassing Speech-to-Text and Text-to-Speech functionalities (EN + TH),  OCR (EN + TH), Liveness Detection, Emotion Detection, and more.',
@@ -73,7 +86,7 @@ export default function Projects() {
       live: 'https://aibrainlab.com/api-library/',
     },
     {
-      id: 6,
+      id: 7,
       category: 'Full Stack',
       title: 'ESG Studio',
       description: 'An enterprise application that provides real-time ESG (Environmental, Social, Governance) data, analytics, and insights for PLCs and SMEs in Thailand.',
@@ -87,7 +100,7 @@ export default function Projects() {
       video: 'https://youtu.be/cmEnaNqGYzQ',
     },
     {
-      id: 7,
+      id: 8,
       category: 'Full Stack',
       title: 'Project Wisdom',
       description: 'Interactive AI avatars that allow interaction with realistic tone and accents, multi-lingual voice synthesis, and engaging conversations with real-world leaders.',
@@ -100,7 +113,7 @@ export default function Projects() {
       live: 'https://aibrainlab.com/wisdom/',
     },
     {
-      id: 8,
+      id: 9,
       category: 'Full Stack',
       title: 'Key Account Management System',
       description: 'An AI-first solution for managing and tracking key accounts, including CRM features, document OCR, task and meetings management and more targeted at insurance companies in Thailand.',
@@ -113,7 +126,7 @@ export default function Projects() {
       // live: 'https://example.com',
     },
     {
-      id: 9,
+      id: 10,
       category: 'Full Stack',
       title: 'AudioCity',
       description: '(Personal) An Audiobook e-commerce platform with upload/download functionality, automated transcript + caption generation, and mock payment gateway integration.',
@@ -127,7 +140,7 @@ export default function Projects() {
       video: 'https://www.youtube.com/watch?v=IB1XOFk9TNs',
     },
     {
-      id: 10,
+      id: 11,
       category: 'Full Stack',
       title: 'Anytime-IELTS',
       description: '(Hackathon) an AI-powered English language mastery platform for IELTS exam takers. Achieved second place in the education domain.',
