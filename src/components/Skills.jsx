@@ -77,7 +77,6 @@ export default function Skills() {
         'Azure VMs & AKS',
         'GCP Compute',
         'Vercel'
-        'Terraform',
       ]
     },
     {
