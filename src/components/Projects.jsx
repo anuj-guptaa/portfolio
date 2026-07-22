@@ -106,7 +106,7 @@ export default function Projects() {
       description: 'An AI-first solution for managing and tracking key accounts, including CRM features, document OCR, task and meetings management and more targeted at insurance companies in Thailand.',
       media: {
         type: 'image',
-        src: 'projects/kam.png'
+        src: 'projects/kam.jpg'
       },
       tags: ['ML/AI', 'OCR', 'CI/CD', 'Django', 'React'],
       // github: 'https://github.com',
