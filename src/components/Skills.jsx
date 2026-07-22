@@ -108,7 +108,6 @@ export default function Skills() {
       items: [
         'Apache Kafka',
         'ML Model Serving',
-        'Data Pipelines',
         'LLM Deployment with vLLM, LiteLLM, LangGraph',
         'MLOps with MLFlow, LangSmith',
         'Vector Databases - PGVector, Pinecone',
@@ -131,9 +130,7 @@ export default function Skills() {
       category: 'Tools & Automation',
       items: [
         'Make, n8n',
-        'Jenkins',
-        'Database Optimization',
-        'Security'
+        'Jenkins'
       ]
     },
   ]
